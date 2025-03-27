@@ -98,11 +98,5 @@ func NewStaticPage(ctx *pulumi.Context, name string, args *StaticPageArgs, opts 
 	// Set outputs
 	comp.Endpoint = bucketWebsite.WebsiteEndpoint
 
-	if err := ctx.RegisterResourceOutputs(comp, pulumi.Map{
-		"endpoint": comp.Endpoint,
-	}); err != nil {
-		return nil, err
-	}
-
 	return comp, nil
 }

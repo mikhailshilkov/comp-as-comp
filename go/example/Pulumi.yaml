@@ -10,5 +10,10 @@ resources:
     type: go-components:RandomComponent
     properties:
       length: 3
+  mystaticpage:
+    type: go-components:StaticPage
+    properties:
+      indexContent: "Hello, World!"
 outputs:
   password: ${myrandom.password}
+  endpoint: ${mystaticpage.endpoint}
