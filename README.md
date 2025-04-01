@@ -25,4 +25,3 @@ The `go` directory contains a simple Go component that creates a sample Random c
 ### .NET
 
 The `dotnet` directory contains a simple .NET component that creates a sample Random component. The `example` folder contains a Pulumi YAML program that consumes the component. 
-
