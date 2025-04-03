@@ -10,6 +10,10 @@ The examples are work-in-progress and will be updated over time as the core Pulu
 
 The `ts` directory contains a simple TypeScript component that creates a TLS self-signed certificate. It illustrates the approach where a bunch of machinery is abstracted away, and the schema is inferred from the component's source code. The `example` folder contains a Pulumi YAML program that consumes the component.
 
+### Java
+
+The `java` directory contains a simple Java component that creates an AWS Static Page component. The `example` folder contains a Pulumi YAML program that consumes the component.
+
 ### Python
 
 The `py` directory contains a simple Python component that creates an AWS Static Page component. The `example` folder contains a Pulumi YAML program that consumes the component.
