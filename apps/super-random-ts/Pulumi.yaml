@@ -1,0 +1,10 @@
+name: super-random-ts
+description: A demonstration of using components from multiple languages in a single Pulumi program.
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+packages:
+  node-components: ../../ts
+  python-components: ../../py
+  go-components: ../../go
