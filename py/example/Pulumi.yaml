@@ -1,4 +1,4 @@
-name: static-page-yaml
+name: py-example-yaml
 description: A minimal Pulumi YAML program
 runtime: yaml
 plugins:
@@ -6,7 +6,13 @@ plugins:
     - name: python-components
       path: ..
 resources:
+  myrandom:
+    type: python-components:RandomComponent
+    properties:
+      length: 3
   mystaticpage:
     type: python-components:StaticPage
     properties:
       indexContent: "<h1>Hello, World!</h1>"
+outputs:
+  password: ${myrandom.password}
