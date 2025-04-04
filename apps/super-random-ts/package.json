@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@mikhailshilkov/go-components": "file:sdks/mikhailshilkov-go-components",
+        "@pulumi/dotnet-components": "file:sdks/dotnet-components",
         "@pulumi/node-components": "file:sdks/node-components",
         "@pulumi/pulumi": "^3.113.0",
         "@pulumi/python-components": "file:sdks/python-components"

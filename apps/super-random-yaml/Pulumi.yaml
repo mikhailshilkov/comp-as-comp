@@ -5,6 +5,7 @@ packages:
   node-components: ../../ts
   python-components: ../../py
   go-components: ../../go
+  dotnet-components: ../../dotnet
 resources:
   random-ts:
     type: node-components:RandomComponent
@@ -18,5 +19,9 @@ resources:
     type: python-components:RandomComponent
     properties:
       length: 3
+  random-dotnet:
+    type: dotnet-components:RandomComponent
+    properties:
+      length: 3
 outputs:
-  superPassword: ${random-ts.password}-${random-go.password}-${random-py.password}
+  superPassword: ${random-ts.password}-${random-go.password}-${random-py.password}-${random-dotnet.password}

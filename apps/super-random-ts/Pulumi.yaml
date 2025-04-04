@@ -8,3 +8,4 @@ packages:
   node-components: ../../ts
   python-components: ../../py
   go-components: ../../go
+  dotnet-components: ../../dotnet
