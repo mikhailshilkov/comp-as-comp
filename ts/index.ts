@@ -3,6 +3,8 @@
 import * as pulumi from "@pulumi/pulumi";
 import * as tls from "@pulumi/tls";
 
+export { RandomComponent, RandomComponentArgs } from "./randomComponent";
+
 // This resources helps you create a self signed certificate.
 export class SelfSignedCertificate extends pulumi.ComponentResource {
     // The PEM of your self signed cert.

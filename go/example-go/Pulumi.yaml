@@ -1,4 +1,4 @@
-name: example-go
+name: go-example-go
 description: A minimal Go Pulumi program
 runtime: go
 plugins:

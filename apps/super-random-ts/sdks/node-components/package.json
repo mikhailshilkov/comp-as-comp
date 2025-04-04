@@ -1,0 +1,21 @@
+{
+    "name": "@pulumi/node-components",
+    "version": "0.0.0",
+    "main": "bin/index.js",
+    "scripts": {
+        "build": "tsc",
+        "postinstall": "node ./scripts/postinstall.js"
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "^3.142.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18",
+        "typescript": "^5.0.0"
+    },
+    "pulumi": {
+        "resource": true,
+        "name": "node-components",
+        "version": "0.0.0"
+    }
+}

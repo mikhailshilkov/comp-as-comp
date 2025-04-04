@@ -1,4 +1,4 @@
-name: static-page-component-yaml
+name: java-example-yaml
 runtime: yaml
 plugins:
   providers:
