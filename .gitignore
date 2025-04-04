@@ -10,3 +10,5 @@ schema-*.json
 .gradle/
 .vscode/
 **/build/
+
+logs.jsonl
