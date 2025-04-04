@@ -1,4 +1,4 @@
-from pulumi.provider.experimental import Metadata, component_provider_host
+from pulumi.provider.experimental import component_provider_host
 from staticpage import StaticPage
 
 if __name__ == "__main__":
