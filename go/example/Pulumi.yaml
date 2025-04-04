@@ -1,4 +1,4 @@
-name: random-component-yaml
+name: go-example-yaml
 description: A minimal Pulumi YAML program
 runtime: yaml
 plugins:
