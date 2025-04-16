@@ -1,8 +1,12 @@
-name: cert-component-yaml
+name: yaml-example-yaml
 runtime: yaml
 packages:
   yaml-components: ../
 resources:
+  myrandom:
+    type: yaml-components:RandomComponent
+    properties:
+      length: 3
   mypage:
     type: yaml-components:StaticPage
     properties:
@@ -14,6 +18,7 @@ resources:
       validityPeriodHours: 24
       localValidityPeriodHours: 24
 outputs:
+  password: ${myrandom.password}
   endpoint: ${mypage.endpoint}
   pem: ${mycert.pem}
   privateKey: ${mycert.privateKey}

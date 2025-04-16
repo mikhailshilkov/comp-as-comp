@@ -1,0 +1,27 @@
+name: super-random-yaml
+description: A demonstration of using components from multiple languages in a single Pulumi program.
+runtime: yaml
+packages:
+  node-components: ../../ts
+  python-components: ../../py
+  go-components: ../../go
+  dotnet-components: ../../dotnet
+resources:
+  random-ts:
+    type: node-components:RandomComponent
+    properties:
+      length: 3
+  random-go:
+    type: go-components:RandomComponent
+    properties:
+      length: 3
+  random-py:
+    type: python-components:RandomComponent
+    properties:
+      length: 3
+  random-dotnet:
+    type: dotnet-components:RandomComponent
+    properties:
+      length: 3
+outputs:
+  superPassword: ${random-ts.password}-${random-go.password}-${random-py.password}-${random-dotnet.password}

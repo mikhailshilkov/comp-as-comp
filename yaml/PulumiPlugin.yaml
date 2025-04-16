@@ -1,6 +1,18 @@
 runtime: yaml
 name: yaml-components
 components:
+  RandomComponent:
+    inputs:
+      length:
+        type: integer
+        default: 16
+    resources:
+      randomPasword:
+        type: random:RandomPassword
+        properties:
+          length: ${length}
+    outputs:
+      password: ${randomPasword.result}
   SelfSignedCertificate:
     inputs:
       algorithm:

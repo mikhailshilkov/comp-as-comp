@@ -1,4 +1,4 @@
-name: my-component-yaml
+name: dotnet-example-yaml
 runtime: yaml
 plugins:
   providers:

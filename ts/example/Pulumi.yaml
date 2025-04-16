@@ -1,8 +1,12 @@
-name: cert-component-yaml
+name: ts-example-yaml
 runtime: yaml
 packages:
   node-components: ../
 resources:
+  myrandom:
+    type: node-components:RandomComponent
+    properties:
+      length: 3
   mycert:
     type: node-components:SelfSignedCertificate
     properties:
@@ -11,3 +15,5 @@ resources:
       localValidityPeriodHours: 24
       subject:
         organization: Example Org
+outputs:
+  password: ${myrandom.password}

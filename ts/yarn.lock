@@ -405,6 +405,41 @@
     tmp "^0.2.1"
     upath "^1.1.0"
 
+"@pulumi/pulumi@^3.142.0":
+  version "3.160.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-3.160.0.tgz#0d7f4ee6c702b97b5c75ccf131db4e284b5303ce"
+  integrity sha512-ZQtryqkvJxuugra2t4a5ROmKFEIazSbpvC/W2Qv2Gmw7UPDxtKiYLJQVX/ZQg06Lu3MfoJ1z3S+gvt71R5OYHw==
+  dependencies:
+    "@grpc/grpc-js" "^1.10.1"
+    "@logdna/tail-file" "^2.0.6"
+    "@npmcli/arborist" "^7.3.1"
+    "@opentelemetry/api" "^1.9"
+    "@opentelemetry/exporter-zipkin" "^1.28"
+    "@opentelemetry/instrumentation" "^0.55"
+    "@opentelemetry/instrumentation-grpc" "^0.55"
+    "@opentelemetry/resources" "^1.28"
+    "@opentelemetry/sdk-trace-base" "^1.28"
+    "@opentelemetry/sdk-trace-node" "^1.28"
+    "@pulumi/query" "^0.3.0"
+    "@types/google-protobuf" "^3.15.5"
+    "@types/semver" "^7.5.6"
+    "@types/tmp" "^0.2.6"
+    execa "^5.1.0"
+    fdir "^6.1.1"
+    google-protobuf "^3.5.0"
+    got "^11.8.6"
+    ini "^2.0.0"
+    js-yaml "^3.14.0"
+    minimist "^1.2.6"
+    normalize-package-data "^6.0.0"
+    picomatch "^3.0.1"
+    pkg-dir "^7.0.0"
+    require-from-string "^2.0.1"
+    semver "^7.5.2"
+    source-map-support "^0.5.6"
+    tmp "^0.2.1"
+    upath "^1.1.0"
+
 "@pulumi/pulumi@^3.159.0":
   version "3.159.0"
   resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-3.159.0.tgz#82cf8e5e048f6526968a7eece361aa009d0feb83"
@@ -444,6 +479,13 @@
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@pulumi/query/-/query-0.3.0.tgz#f496608e86a18c3dd31b6c533408e2441c29071d"
   integrity sha512-xfo+yLRM2zVjVEA4p23IjQWzyWl1ZhWOGobsBqRpIarzLvwNH/RAGaoehdxlhx4X92302DrpdIFgTICMN4P38w==
+
+"@pulumi/random@^4.18.0":
+  version "4.18.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/random/-/random-4.18.0.tgz#d04d3a5530ad12fc080a52f286f40fcc9ca1a987"
+  integrity sha512-6joE5/jhadtWmwuMh3YtDB1kA3G4pDLVhk+l5mSxe/kuf+ejQ1w+LnfbpRi9iinwPl2AqzfDp9IheksTxIwzFA==
+  dependencies:
+    "@pulumi/pulumi" "^3.142.0"
 
 "@pulumi/tls@^4.6.1":
   version "4.11.1"
