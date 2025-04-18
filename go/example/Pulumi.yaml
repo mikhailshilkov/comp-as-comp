@@ -1,10 +1,8 @@
 name: go-example-yaml
 description: A minimal Pulumi YAML program
 runtime: yaml
-plugins:
-  providers:
-    - name: go-components
-      path: ..
+packages:
+  go-components: ..
 resources:
   myrandom:
     type: go-components:RandomComponent

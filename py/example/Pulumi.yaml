@@ -1,10 +1,8 @@
 name: py-example-yaml
 description: A minimal Pulumi YAML program
 runtime: yaml
-plugins:
-  providers:
-    - name: python-components
-      path: ..
+packages:
+  python-components: ..
 resources:
   myrandom:
     type: python-components:RandomComponent

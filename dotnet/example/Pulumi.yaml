@@ -1,9 +1,7 @@
 name: dotnet-example-yaml
 runtime: yaml
-plugins:
-  providers:
-    - name: dotnet-components 
-      path: ..
+packages:
+  dotnet-components: ..
 resources:
   myrandom:
     type: dotnet-components:RandomComponent

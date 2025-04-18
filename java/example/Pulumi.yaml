@@ -1,9 +1,7 @@
 name: java-example-yaml
 runtime: yaml
-plugins:
-  providers:
-    - name: java-components
-      path: ..
+packages:
+  java-components: ..
 resources:
   myrandom:
     type: java-components:StaticPage

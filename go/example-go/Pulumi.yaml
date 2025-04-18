@@ -1,10 +1,8 @@
 name: go-example-go
 description: A minimal Go Pulumi program
 runtime: go
-plugins:
-  providers:
-    - name: go-components
-      path: ..
+packages:
+  go-components: ..
 config:
   pulumi:tags:
     value:
