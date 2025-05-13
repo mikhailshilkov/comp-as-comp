@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/pulumi/play/comp-as-comp/pulumi-resource-go-components/talos"
 	"github.com/pulumi/pulumi-go-provider/infer"
 )
 
@@ -11,6 +12,7 @@ func main() {
 		WithComponents(
 			infer.Component(NewRandomComponent),
 			infer.Component(NewStaticPage),
+			infer.Component(talos.NewTalosCluster),
 		).
 		BuildAndRun()
 
